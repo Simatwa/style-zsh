@@ -52,15 +52,15 @@ git clone --depth  1 -- https://github.com/marlonrichert/zsh-autocomplete.git $Z
 # Enable plugins by adding them to .zshrc.
 
 echo "\
-    Open ~/.zshrc\n
+    Open ~/.zshrc
 
-    Find the line which says plugins=(git).\n
+    Find the line which says plugins=(git).
 
-    Replace that line with: \n
-     plugins=(git zsh-autosuggestions zsh-syntax-highlighting fast-syntax-highlighting zsh-autocomplete)\n
+    Replace that line with:
+     plugins=(git zsh-autosuggestions zsh-syntax-highlighting fast-syntax-highlighting zsh-autocomplete)
 
-    Recommended themes :\n
-     bira, rkj-repos\n
+    Recommended themes :
+     bira, rkj-repos
      "
     
 echo "Auto-opening config file in $SLEEP_TIME s"
