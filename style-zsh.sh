@@ -3,7 +3,7 @@
 set -e
 SLEEP_TIME=10
 
-function out_this(){
+function out_this() {
     echo ">> [*] $@"
 }
 
