@@ -1,10 +1,16 @@
 #!/bin/bash
 
-set -e
 SLEEP_TIME=10
 function out_this() {
     echo ">> [*] $@"
 }
+
+if [ -n "$IGNORE_ERROR" ]; then
+  out_this "Exceptions will be ignored"
+else
+  set -e
+fi
+
 
 out_this "Installing required packages"  
 
