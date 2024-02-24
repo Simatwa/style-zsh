@@ -9,7 +9,11 @@ function out_this() {
 
 out_this "Installing required packages"  
 
-apt install zsh-autosuggestions zsh-syntax-highlighting zsh git curl nano -y
+if [ -d "/data/data/com.termux/files/usr/bin" ]; then
+   apt install zsh git curl nano -y
+else 
+   apt install zsh-autosuggestions zsh-syntax-highlighting zsh git curl nano -y
+fi
 
 # Install oh-my-zsh
 
