@@ -5,7 +5,7 @@ Style zsh with ease.
 # Installation
 
    ```sh
-   sh -c "$(curl -fsSL 'https://github.com/Simatwa/style-zsh/blob/main/install-oh-my-zsh.sh?raw=true')"
+   sh -c "$(curl -fsSL 'https://github.com/Simatwa/style-zsh/blob/main/style-zsh.sh?raw=true')"
    ```
 
 # Credits 
