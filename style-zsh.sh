@@ -2,7 +2,6 @@
 
 set -e
 SLEEP_TIME=10
-
 function out_this() {
     echo ">> [*] $@"
 }
@@ -15,11 +14,19 @@ else
    apt install zsh-autosuggestions zsh-syntax-highlighting zsh git curl nano -y
 fi
 
+
+
+
 # Install oh-my-zsh
 
 out_this "Installing oh-my-zsh"
 
 sh -c "$(curl -fsSL https://github.com/Simatwa/style-zsh/blob/main/install-oh-my-zsh.sh?raw=true)"
+
+
+if [ -z "$ZSH_CUSTOM" ]; then
+    ZSH_CUSTOM=$HOME/.oh-my-zsh/custom
+fi
 
 # Install plugins.
 
