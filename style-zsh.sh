@@ -75,7 +75,10 @@ echo "\
     Recommended themes :
      bira, rkj-repos
      "
-    
+
 echo "Auto-opening config file in $SLEEP_TIME s"
 sleep $SLEEP_TIME
 nano ~/.zshrc
+
+out_this "Launching zsh"
+zsh
