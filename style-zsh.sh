@@ -62,8 +62,8 @@ out_this "^ Autocomplete"
 
 git clone --depth  1 -- https://github.com/marlonrichert/zsh-autocomplete.git $ZSH_CUSTOM/plugins/zsh-autocomplete
 
+: '
 # Enable plugins by adding them to .zshrc.
-
 echo "\
     Open ~/.zshrc
 
@@ -79,6 +79,7 @@ echo "\
 echo "Auto-opening config file in $SLEEP_TIME s"
 sleep $SLEEP_TIME
 nano ~/.zshrc
-
+: '
+sed -i 's/plugins=(git)/plugins=(git zsh-autosuggestions zsh-syntax-highlighting fast-syntax-highlighting zsh-autocomplete)/g' ~/.zshrc
 out_this "Launching zsh"
 zsh
